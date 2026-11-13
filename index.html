@@ -17,16 +17,43 @@
   }
 Section{
         display: block;
-        margin: auto;
-        width: 600px;
+        width: 650px;
         height: auto;
         background-color: rgb(252, 254, 253);
-        box-shadow: 0px 3px 10px rgb(5, 5, 5)
+        box-shadow: 0px 3px 10px rgb(5, 5, 5);
+        opacity: 90%;
+        margin: 0 auto;
+        text-align: justify;
+        border-radius: 5px;
+        background-color: rgba(253, 254, 255, 0.95);
+        padding: 30px;
+        max-width: 1000px;
+        box-shadow: 0px 10px 20px 2px rgb(2, 2, 2);
+        margin-bottom: 25px;
+        display:block;
+        
+        
+        
 
 }
 h1{
   color: aliceblue;
 }
+.form-row{
+  display:flex;
+    gap: 40px; 
+  margin-bottom: 20px;
+}
+h1s{
+  font-size: 23px;
+}
+p{
+  color: aliceblue;
+}
+submit{
+  text-align: center;
+}
+
 </style>
 
 </head>
@@ -55,28 +82,112 @@ h1{
     <br>
   <h1>Student Enrollment Form</h1>
   </body>
+  <br>
+  
 
   <section>
+    <br>
+    <h1s>Student Information:</h1s>
         <br><Br>   
             <form action="">
-                <label for="fname">Fullname:</label>
-                <br>
+              <div class="form-row">
+                <div class="form-group">
+                <label for="fname">Full name:</label>
+                
                 <input type="text" id="fname" name="fname" placeholder="Enter full name" required>
+               </div>
+
+                <div class="form-group">
+                <label for="lname">Last name:</label>
+                
+                
+                <input type="text" id="lname" name="lname" placeholder="Enter last name" required>
+               </div>
+                </div>
+               </div>
+                <br><br>
+
+                <div class="form-row">
+                <div class="form-group">
+                <label for="bday">Birth Date:</label>
+                
+                <input type="text" id="bday" name="bday" placeholder="xxx/yyy/ddd" required>
+               </div>
+
+                <div class="form-group">
+                <label for="grade">Grade Level:</label>
+                <select id="grade">
+                <br>
+                <option value="Grade 7">Grade 7</option>
+                <option value="Grade 8">Grade 8</option>
+                <option value="Grade 9">Grade 9</option>
+                <option value="Grade 10">Grade 10</option>
+              </select>
+
+               </div>
+                </div>
+               </div>
+                <br>
+               <div class="form-group">
+                <label for="GENDER">Gender:</label>
+                <select id="grade">
+                <br>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+                
                
-                <br><br>
-                
-                <Label for="Enter Gmail">Email:</Label>
-                <br>
-                <Input type="Enter Gmail" id="Enter Gmail" name="Enter Gmail" placeholder="Enter Gmail" required>
                 
                 <br><br>
-
-                <Label for="Enter Subject">Subject:</Label> 
-                <br>
-                <input type="Enter Subject" id="Enter Subject" placeholder="Enter Subject" required>
-
                 
+               <h1s>Contact Information:</h1s>
+                
+              <br><br>
+              <div class="form-row">
+                <div class="form-group">
+                <label for="Email">Email:</label>
+                
+                <input type="text" id="Email" name="Email" placeholder="student@example.com" required>
+               </div>
+
+               <div class="form-group">
+                <label for="CONTACT">Contact Number:</label>
+                
+                
+                <input type="text" id="CONTACT" name="CONTACT" placeholder="0917-" required>
+               </div>
+                </div>
+               </div>
+                <br><br>
+              <h1s>Other Information:</h1s>
+              <br><br>
+              <label for="Genre">Mode of Learning:</label>
+<br>
+<input type="checkbox" id="Genre1" name="genre1" value="genre1">
+            <label for="Genre1">Online</label>
+            <br>
+              <input type="checkbox" id="Genre2" name="genre2" value="genre2">
+            <label for="Genre2">Face to Face</label>
+            <br><br>
+              <input type="checkbox" id="Genre3" name="genre3" value="genre3">
+            <label for="Genre3">I confirm that the information provided is true and complete.</label>
+<br><br>
+                            <input type="submit" id="submit" name="submit" value="Submit a Review">
                 </form>
-
-<br> 
+              </div>
+              
+          
+                <br>
+<br>
+<br>  
 </section>
+<footer>
+
+  <p>
+NPC Seal of Registration.    |    Privacy Policy
+
+ © 2026 O.B. Montessori Center. All Rights Reserved. </p>
+  <p>Contact info:+63 2 8722 9720 to 26 or use <a href="info@obmontessori.edu.ph">info@obmontessori.edu.ph</a></p>
+  
+</footer>
+</html>
